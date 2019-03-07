@@ -47,7 +47,7 @@ var APP_DATA = {
       ]
     }
   ],
-  "name": "HOBB Panorama Test",
+  "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
