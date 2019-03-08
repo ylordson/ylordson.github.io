@@ -20,7 +20,7 @@ var APP_DATA = {
       ],
       "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": 1.5705402686262575,
+        "yaw": 10,
         "pitch": -0.005379203193641047,
         "fov": 0.174533
       },
@@ -47,7 +47,7 @@ var APP_DATA = {
       ]
     }
   ],
-  "name": "Project Title",
+  "name": "HOBB Panorama Test",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
