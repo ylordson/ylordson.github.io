@@ -20,18 +20,37 @@ var APP_DATA = {
       ],
       "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": 1.585026198160806,
-        "pitch": -0.03683145394656151,
-        "fov": 1.2256404043304827
+        "yaw": 1.5705402686262575,
+        "pitch": -0.005379203193641047,
+        "fov": 1.3487598040662003
       },
       "linkHotspots": [],
-      "infoHotspots": []
+      "infoHotspots": [
+        {
+          "yaw": -0.6193046871221792,
+          "pitch": 0.1288136580374264,
+          "title": "Blender",
+          "text": "Price: $ 10<div>Description: House of blue beans</div>"
+        },
+        {
+          "yaw": 1.4563569287979963,
+          "pitch": 0.522690994499662,
+          "title": "Oven",
+          "text": "Text"
+        },
+        {
+          "yaw": 0.045942505144488166,
+          "pitch": 0.32632546121026706,
+          "title": "Sink",
+          "text": "Text"
+        }
+      ]
     }
   ],
-  "name": "Lowes Demo",
+  "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
+    "autorotateEnabled": false,
     "fullscreenButton": true,
     "viewControlButtons": true
   }
