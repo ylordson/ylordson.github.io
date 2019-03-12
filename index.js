@@ -16,8 +16,7 @@
 'use strict';
 
 // Create viewer.
-var options = { swfPath: 'marzipano.swf' };
-var viewer = new Marzipano.Viewer(document.getElementById('pano'),options);
+var viewer = new Marzipano.Viewer(document.getElementById('pano'));
 
 // Create source.
 var source = Marzipano.ImageUrlSource.fromString(
