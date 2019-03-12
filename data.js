@@ -53,7 +53,7 @@ var APP_DATA = {
       ]
     }
   ],
-  "name": "360 Demo Lowes",
+  "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
