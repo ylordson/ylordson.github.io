@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-kt07panorama01",
-      "name": "KT07Panorama01",
+      "name": "360 Panorama Test",
       "levels": [
         {
           "tileSize": 256,
@@ -53,29 +53,29 @@ var APP_DATA = {
       ],
       "revealHotspots": [
         {
-          "yaw": 2.0943720042078073,
-          "pitch": 0.09622162319119276,
+          "yaw": 2.22,
+          "pitch": -0.2,
           "title": "<h1 class=\"h3\" style=\"margin-bottom: 5px; font-size: 1.57143rem; font-weight: 400; color: rgb(51, 51, 51); font-family: &quot;DIN Next&quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;\">LG French Door Refrigerator</h1>",
           "text": "LG InstaView 26-cu ft French Door Refrigerator with Dual Ice Maker and Door within Door (Stainless Steel) ENERGY STAR",
           "image_path": "img/048231797061.jpg"
         },
         {
-          "yaw": 1.503868026377714,
-          "pitch": 0.32124298049523325,
+          "yaw": 1.63,
+          "pitch": 0.18,
           "title": "<h1 class=\"h3\" style=\"margin-bottom: 5px; font-size: 1.57143rem; font-weight: 400; color: rgb(51, 51, 51); font-family: &quot;DIN Next&quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;\">LG Electric Range</h1>",
           "text": "LG Smooth Surface 5-Element 6.3-cu ft Convection Freestanding Electric Range (Stainless Steel) (Common: 30-in; Actual: 29.875-in)",
           "image_path": "img/048232330991.jpg"
         },
         {
-          "yaw": 0.5695713227512584,
-          "pitch": 0.4035265139534481,
+          "yaw": 0.68,
+          "pitch": 0.2,
           "title": "<h1 class=\"h3\" style=\"margin-bottom: 5px; font-size: 1.57143rem; font-weight: 400; color: rgb(51, 51, 51); font-family: &quot;DIN Next&quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;\">LG Dishwasher</h1>",
           "text": "LG 48-Decibel Built-in Dishwasher (Stainless Steel) (Common: 24 Inch; Actual: 23.75-in) ENERGY STAR",
           "image_path": "img/048231015097.jpg"
         },
         {
-          "yaw": 1.476169585120891,
-          "pitch": -0.15284375053362886,
+          "yaw": 1.618,
+          "pitch": -0.25,
           "title": "<h1 class=\"h3\" style=\"margin-bottom: 5px; font-size: 1.57143rem; font-weight: 400; color: rgb(51, 51, 51); font-family: &quot;DIN Next&quot;, Helvetica, Arial, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal;\">LG Microwave</h1>",
           "text": "LG 1.7-cu ft Over-the-Range Microwave (Stainless Steel) (Common: 30-in; Actual: 29.875-in)",
           "image_path": "img/048232336511.jpg"
@@ -89,6 +89,6 @@ var APP_DATA = {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
     "fullscreenButton": true,
-    "viewControlButtons": true
+    "viewControlButtons": false
   }
 };

@@ -1,6 +1,6 @@
 #reveal {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-color: #25aae1;
   border-radius: 50%;
   margin-left: 0;
@@ -13,12 +13,12 @@
 }
 
 #reveal > img {
-  width: 50px;
-  margin: 15px 0;
+  width: 30px;
+  margin: 10px 0;
 }
 
 .reveal-content {
-  width: 250px;
+  width: 320px;
   height: 320px;
   padding: 10px;
   background-color: #fff;
@@ -47,7 +47,7 @@
 }
 
 #reveal:hover {
-  width: 250px;
+  width: 320px;
   height: 240px;
   border-radius: 5px;
   margin-left: -50px;

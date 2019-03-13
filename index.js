@@ -381,11 +381,17 @@
     thumbnail.src = hotspot.image_path;
 
     var description = document.createElement("p");
+    description.style.fontWeight = "bold";
     var node = document.createTextNode(hotspot.text);
     description.appendChild(node)
 
+    var hr = document.createElement('hr')
+    var hr1 = document.createElement('hr')
+
     contentWrapper.appendChild(thumbnail);
+    contentWrapper.appendChild(hr);
     contentWrapper.appendChild(description);
+    contentWrapper.appendChild(hr1);
 
     wrapper.appendChild(icon);
     wrapper.appendChild(contentWrapper);
