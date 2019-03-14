@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-kt07panorama01",
-      "name": "360 Panorama Test",
+      "name": "360 Panorama Demo",
       "levels": [
         {
           "tileSize": 256,
@@ -84,7 +84,7 @@ var APP_DATA = {
       ]
     }
   ],
-  "name": "Project Title",
+  "name": "360",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
