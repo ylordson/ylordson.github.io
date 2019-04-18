@@ -63,7 +63,8 @@
   // Viewer options.
   var viewerOpts = {
     controls: {
-      mouseViewMode: data.settings.mouseViewMode
+      mouseViewMode: data.settings.mouseViewMode,
+      scrollZoom: false
     }
   };
 
@@ -78,7 +79,7 @@
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var limiter = Marzipano.RectilinearView.limit.traditional(2048, 100*Math.PI/180, 120*Math.PI/180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
@@ -95,10 +96,18 @@
     });
 
     // Create info hotspots.
-    data.infoHotspots.forEach(function(hotspot) {
-      var element = createInfoHotspotElement(hotspot);
+    //data.infoHotspots.forEach(function(hotspot) {
+    //  var element = createInfoHotspotElement(hotspot);
+    //  scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+    //});
+
+    // Create info hotspots.
+    data.revealHotspots.forEach(function(hotspot) {
+      var element = createRevealHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
     });
+
+    //scene.hotspotContainer().createHotspot(document.querySelector("#reveal"), { yaw: -0.92, pitch: -0.1 });
 
     return {
       data: data,
@@ -354,6 +363,39 @@
     // This prevents the view control logic from interfering with the hotspot.
     stopTouchAndScrollEventPropagation(wrapper);
 
+    return wrapper;
+  }
+
+  function createRevealHotspotElement(hotspot) {
+
+    var wrapper = document.createElement('div');
+    wrapper.id = "reveal";
+
+    var icon = document.createElement("IMG");
+    icon.src = "img/photo.png";
+
+    var contentWrapper = document.createElement("div");
+    contentWrapper.classList.add('reveal-content');
+
+    var thumbnail = document.createElement("IMG");
+    thumbnail.src = hotspot.image_path;
+
+    var description = document.createElement("p");
+    description.style.fontWeight = "bold";
+    description.style.fontFamily = "DIN Next";
+    var node = document.createTextNode(hotspot.text);
+    description.appendChild(node)
+
+    var hr = document.createElement('hr')
+    var hr1 = document.createElement('hr')
+
+    contentWrapper.appendChild(thumbnail);
+    contentWrapper.appendChild(hr);
+    contentWrapper.appendChild(description);
+    contentWrapper.appendChild(hr1);
+
+    wrapper.appendChild(icon);
+    wrapper.appendChild(contentWrapper);
     return wrapper;
   }
 
